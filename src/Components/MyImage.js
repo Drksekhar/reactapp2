@@ -16,6 +16,7 @@ export default function MyImage() {
 
                 src={pic} alt="" height={300} width={400}
             />
+        
         </div>
     )
 }

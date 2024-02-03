@@ -1,9 +1,13 @@
 import './App.css';
-import AllStudents from './Components/AllStudents';
+import TodoList from './Components/TodoList';
+import TodoList2 from './Components/TodoList2';
 function App() {
   return (
     <div className="App">
-      <AllStudents />
+
+      <TodoList/>
+      <br/>
+      <TodoList2 />
     </div>
   );
 }

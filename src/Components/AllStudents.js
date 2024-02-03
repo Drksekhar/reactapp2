@@ -26,17 +26,17 @@ console.log(data[2].Phone);
 export default function AllStudents() {
     return (
         <div>
-            <h1 style={{ color: 'blue' }}>{title}</h1>
+            <h1 style={{ color: 'blue'  }}>{title}</h1>
             <br />
             <h4>{arr}</h4>
             <h4>{JSON.stringify(arr)}</h4>
             <h4>{JSON.stringify(obj)}</h4>
-// to get fixed data
+
             {/* <StudentsCard name="sekhar" town="THU" Phone="1234568" />
             <StudentsCard name="Anji" town="KNL" Phone="1234568" />
             <StudentsCard name="Madhu" town="NDK" Phone="1234568" /> */}
 
-// to get dynamic data
+
             {data.map((item) =>
                 <>
                     <StudentsCard name={item.name} town={item.town} Phone={item.Phone} />

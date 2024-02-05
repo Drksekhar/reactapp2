@@ -1,13 +1,11 @@
 import './App.css';
-import TodoList from './Components/TodoList';
-import TodoList2 from './Components/TodoList2';
+import TodoListEdiSavetDel from './Components/TodoListEdiSavetDel';
 function App() {
   return (
     <div className="App">
 
-      <TodoList/>
-      <br/>
-      <TodoList2 />
+      <br />
+      <TodoListEdiSavetDel />
     </div>
   );
 }

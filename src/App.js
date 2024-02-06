@@ -1,11 +1,11 @@
 import './App.css';
-import TodoListEdiSavetDel from './Components/TodoListEdiSavetDel';
+import Fruits from './FB/Fruits';
 function App() {
   return (
     <div className="App">
 
       <br />
-      <TodoListEdiSavetDel />
+      <Fruits />
     </div>
   );
 }

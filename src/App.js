@@ -1,11 +1,13 @@
 import './App.css';
-import Fruits from './FB/Fruits';
+import Match from './Components/Match';
+import 'semantic-ui-css/semantic.min.css'
 function App() {
   return (
     <div className="App">
 
       <br />
-      <Fruits />
+      <Match />
+      
     </div>
   );
 }

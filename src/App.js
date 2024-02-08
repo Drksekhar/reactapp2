@@ -1,13 +1,13 @@
 import './App.css';
-import Match from './Components/Match';
 import 'semantic-ui-css/semantic.min.css'
+import Match2 from './Components/Match2';
 function App() {
   return (
     <div className="App">
 
       <br />
-      <Match />
-      
+      <Match2 />
+
     </div>
   );
 }

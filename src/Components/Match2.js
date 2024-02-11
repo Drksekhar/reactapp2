@@ -115,7 +115,7 @@ export default function Match2() {
                 closeIcon
                 size='mini'
             >
-                <Modal.Header> Do you want to Delete All Items?</Modal.Header>
+                <Modal.Header> Really, Do you want to Delete All?</Modal.Header>
                 <Modal.Actions>
                     <Button color='red' onClick={deleteAll}>Delete All</Button>
                     <Button color='black' onClick={() => setdelAllBox(false)}>Cancel</Button>

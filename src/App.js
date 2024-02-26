@@ -6,10 +6,14 @@ import { createContext, useEffect, useState } from 'react';
 import { onAuthStateChanged, onIdTokenChanged, signOut } from 'firebase/auth';
 import { auth } from './FB/conf';
 import Login from './FB/Login';
-import { Button, Icon, Menu } from 'semantic-ui-react';
+import { Icon, Menu } from 'semantic-ui-react';
 import TodoListFB from './FB/TodoListFB';
-import DummyLogin from './FB/DummyLogin';
-import TodoList25Feb from './Components/TodoList25Feb';
+// import DummyLogin from './FB/DummyLogin';
+//import TodoList25Feb from './Components/TodoList25Feb';
+import TodoList25Feb2 from './Components/TodoList25Feb2';
+//import TodoList26Feb from './Components/TodoList26Feb';
+//import TodoList26Feb2 from './Components/TodoList26Feb2';
+import Todo26FEB24E from './Components/Todo26FEB24E';
 export const MyContext = createContext(null)
 function App() {
   const urlParams = new URLSearchParams(window.location.search)
@@ -43,7 +47,7 @@ function App() {
   }
 
   function MainMenu() {
-    const items = ['Home', 'Match2', 'TodoList2', 'TodoListFB', 'DummyLogin', "Games", "TodoList25Feb"]
+    const items = ['Home', 'Match2', 'TodoList2', 'TodoListFB', 'Todo26FEB24E', "Games", "TodoList25Feb"]
 
 
     return (
@@ -73,12 +77,12 @@ function App() {
         <MyContext.Provider value={{ user }}>
           <MainMenu />
           {page === 'Home' && <p>this is home</p>}
-          {page === 'DummyLogin' && <DummyLogin/>}
+          {page === 'TodoList25Feb2' && <TodoList25Feb2 />}
           {page === 'TodoListFB' && <TodoListFB />}
           {page === 'Match2' && <Match2 />}
           {page === 'TodoList2' && <TodoList2 />}
-          {page === 'TodoList25Feb' && <TodoList25Feb />}
-          
+          {page === 'Todo26FEB24E' && <Todo26FEB24E />}
+
         </MyContext.Provider>
         :
         <Login />
